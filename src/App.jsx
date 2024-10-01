@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Home, Layout } from "./Pages";
+
+import {  Home, Layout } from "./Pages";
 
 function App() {
   const router = createBrowserRouter([
@@ -11,6 +12,7 @@ function App() {
           index: true,
           element: <Home />,
         },
+       
       ],
     },
   ]);
