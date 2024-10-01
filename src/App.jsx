@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Home, Layout } from "./Pages";
+import { Error, Home, Layout } from "./Pages";
 
 function App() {
   const router = createBrowserRouter([
@@ -12,6 +12,10 @@ function App() {
           element: <Home />,
         },
       ],
+    },
+    {
+      path: "*",
+      element: <Error />,
     },
   ]);
   return <RouterProvider router={router} />;
