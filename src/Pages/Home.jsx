@@ -1,15 +1,14 @@
 import { Hero, BestProp, TrendingProp, Testimonial, FAQ } from "../components";
 
 const Home = () => {
-
   return (
     <div className="w-full">
-        <Hero/>
+      <Hero />
       <div className="layout">
-        <BestProp/>
-        <TrendingProp/>
-        <Testimonial/>
-        <FAQ/>
+        <BestProp />
+        <TrendingProp />
+        <Testimonial />
+        <FAQ />
       </div>
     </div>
   );

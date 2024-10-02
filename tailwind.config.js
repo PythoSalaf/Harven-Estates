@@ -4,21 +4,20 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#2161a9",
-        "blue": "#2161AA",
-        "gray": "#374151",
-        'ash': "#F9FAFB"
-
-
-
+        primary: "#2E7DD7",
+        grayPrimary: "#4B5563",
+        graySecondary: "#E5E7EB",
+        blue: "#2161AA",
+        gray: "#374151",
+        ash: "#F9FAFB",
       },
-      fontSize:{
-        '60': '64px',
-        '40':'40px',
-        '24':'24px',
-        '16': '16px',
-        '20':'20px'
-      }
+      fontSize: {
+        60: "64px",
+        40: "40px",
+        24: "24px",
+        16: "16px",
+        20: "20px",
+      },
     },
   },
   plugins: [],
