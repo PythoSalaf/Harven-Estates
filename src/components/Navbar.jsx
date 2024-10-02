@@ -14,7 +14,7 @@ const Navbar = () => {
         </Link>
 
         <div className="items-center hidden md:flex gap-x-5">
-          <NavLink>All Properties</NavLink>
+          <NavLink to="/all-properties">All Properties</NavLink>
           <NavLink>Agents</NavLink>
           <NavLink>Blogs</NavLink>
         </div>
