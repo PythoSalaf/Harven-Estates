@@ -1,4 +1,4 @@
 import Logo from "./logo.svg";
 import Footerlogo from "./footerlogo.svg";
-
-export { Logo, Footerlogo };
+import propertyOne from "./PropertyOne.svg"
+export { Logo, Footerlogo, propertyOne};
