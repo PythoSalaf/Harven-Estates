@@ -1,8 +1,14 @@
+import { Hero, BestProp, TrendingProp, Testimonial, FAQ } from "../components";
+
 const Home = () => {
   return (
-    <div className="w-full h-screen bg-primary">
+    <div className="w-full">
+      <Hero />
       <div className="layout">
-        <h2>Home</h2>
+        <BestProp />
+        <TrendingProp />
+        <Testimonial />
+        <FAQ />
       </div>
     </div>
   );
