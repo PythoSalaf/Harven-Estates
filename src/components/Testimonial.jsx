@@ -1,6 +1,6 @@
 
 
-import { propertyOne } from "../assets";
+import { person1 } from "../assets";
 // import { IoIosArrowRoundForward, IoIosArrowRoundBackward } from "react-icons/io";
 import { useState } from 'react';
 
@@ -11,20 +11,20 @@ const testimonials = [
     id: 1,
     name: "Dr. Temitope Bakare",
     text: "My experience with Haven has been smooth sailing from the start. Transparent, great communication and my property agent was friendly, professional and kept me informed throughout the whole process.",
-    image: propertyOne
+    image: person1
   },
   {
     id: 2,
     name: "Jane Doe",
     text: "Haven was fantastic in every aspect. They truly care about their clients and provide top-notch service.",
-    image: propertyOne
+    image: person1
   },
 
   {
     id: 3,
     name: "Jane Doe",
     text: "Haven was fantastic in every aspect. They truly care about their clients and provide top-notch service.",
-    image: propertyOne
+    image: person1
   },
  
 ];
