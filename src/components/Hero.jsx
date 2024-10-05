@@ -45,7 +45,7 @@ const Hero = () => {
                  </select>
                  </div>
 
-        {/* property Type */}
+      
         <div className="bg-white p-3">
         <select name="" id="location" className="border rounded p-2">
                  <option value=""  type='checkbox'>Property Type</option>
