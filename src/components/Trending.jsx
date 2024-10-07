@@ -1,6 +1,6 @@
 
 
-import { propertyOne, Shortlet, grid3, A1 } from "../assets";
+import { propertyOne, Shortlet, Office1, A1 } from "../assets";
 
 const Trending = () => {
   return (
@@ -42,7 +42,7 @@ const Trending = () => {
       </div>
       <div className="relative h-40">
         <img
-          src={grid3} 
+          src={Office1} 
           alt="Apartments Collections"
           className=" object-cover rounded-lg w-40 h-40 md:w-60 md:h-60"
         />
