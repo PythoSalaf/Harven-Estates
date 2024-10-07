@@ -7,6 +7,7 @@ export default {
         primary: "#2E7DD7",
         grayPrimary: "#4B5563",
         graySecondary: "#E5E7EB",
+        graylish: "#6B7280",
         blue: "#2161AA",
         gray: "#374151",
         ash: "#F9FAFB",
