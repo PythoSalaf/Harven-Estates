@@ -1,5 +1,5 @@
 
-import { propertyOne } from "../assets";
+import { sell, buy, agent } from "../assets";
 const Services = () => {
   const services = [
     {
@@ -7,7 +7,7 @@ const Services = () => {
       description: 'Browse the website’s database to choose a property that fits your taste in Nigeria.',
       linkText: 'Discover properties',
       linkUrl: '#',
-      imageUrl: propertyOne, 
+      imageUrl: sell, 
       linkColor: 'text-blue-500',
     },
     {
@@ -15,7 +15,7 @@ const Services = () => {
       description: 'Put your properties in front of millions of Nigerians and get the best deals in days not months.',
       linkText: 'Sell properties',
       linkUrl: '#',
-      imageUrl: propertyOne, 
+      imageUrl: buy, 
       linkColor: 'text-blue-500',
     },
     {
@@ -23,7 +23,7 @@ const Services = () => {
       description: 'Create an account and join us to become an agent. Get all the tools your Real estate agency needs.',
       linkText: 'Join us now',
       linkUrl: '#',
-      imageUrl: propertyOne, 
+      imageUrl: agent, 
     }
   ];
 
@@ -35,7 +35,7 @@ const Services = () => {
             <img 
               src={service.imageUrl} 
               alt={service.title} 
-              className="h-40 w-full object-cover rounded-md mb-4" 
+              className="h-60 w-full object-cover rounded-md mb-4" 
             />
             <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
             <p className="text-gray-600 mb-4">{service.description}</p>

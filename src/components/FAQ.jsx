@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { propertyOne } from "../assets";
+import { faq } from "../assets";
 const faqs = [
   {
     question: "Is Haven only available in Nigeria?",
@@ -42,7 +42,7 @@ const FAQ = () => {
         <h2 className="text-2xl font-bold mb-4">Some of the things you may want to know</h2>
         <p className="text-gray-500 mb-6">We answered questions so you don’t have to ask them.</p>
         <img
-          src= {propertyOne}
+          src= {faq}
           alt="FAQ Illustration"
           className="w-full max-w-xs mx-auto md:mx-0"
         />
