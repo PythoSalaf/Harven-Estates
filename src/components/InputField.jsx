@@ -3,16 +3,13 @@ import { MdSearch } from "react-icons/md";
 const InputField = () => {
   return (
     <div className="bg-white md:m-auto pt-5 mt-10  rounded mx-10 md:mx-60">
-    
-    {/*dropdown */}
     <div className="md:flex grid gap-4 p-4">
-       {/* search */}
-    <div className="flex border rounded">
+   
+    <div className="flex border rounded-2xl">
     <MdSearch size={25} className="text-gray mt-5 ml-2" />
     <input type="text" className=" text-grey outline-none " placeholder="Search" />
     </div>
     
-       {/* location */}
        <div className="bg-white p-3">
            <select name="" id="location" className="md:border border-b rounded md:p-2">
                 <option value="">Location</option>
@@ -37,8 +34,6 @@ const InputField = () => {
                 <option value="">Resorts</option>
                 </select>
        </div>
-
-       {/* price Range */}
        <div className="bg-white p-3">
        <select name="" id="location" className="border rounded p-2">
                <option value="">Price Range</option>

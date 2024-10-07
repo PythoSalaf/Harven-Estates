@@ -22,7 +22,7 @@ const Hero = () => {
             </p>
             <p className="font-[400] text-16 p-4 md:text-24 md:mb-10">
               Haven is Nigeria’s leading online real estate platform which eases
-              the stress of finding <br /> properties online{" "}
+              the stress of finding <br /> properties online
             </p>
           </div>
 
