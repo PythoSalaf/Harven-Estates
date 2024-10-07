@@ -19,7 +19,7 @@ const Hero = () => {
     <p className=" text-40 md:text-60 font-bold pt-5 md:pt-10 mt-48 md:mt-10">
       Find Your Home, Your Safe <span className="text-black">Haven.</span>
       </p>
-      <p className="font-[400] text-16 p-4 md:text-24 md:mb-10">Haven is Nigeria's leading online real estate platform 
+      <p className="font-[400] text-16 p-4 md:text-24 md:mb-10">Haven is Nigeria’s leading online real estate platform 
         which eases the stress of finding <br /> properties online </p>
     </div>
 
