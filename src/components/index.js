@@ -9,3 +9,4 @@ export { default as Services } from "./Services";
 export { default as Testimonial } from "./Testimonial";
 export { default as FAQ } from "./FAQ";
 export { default as InputField } from "./InputField";
+export { default as PropertyCard } from "./PropertyCard";
