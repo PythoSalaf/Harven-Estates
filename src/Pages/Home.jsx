@@ -8,11 +8,6 @@ const Home = () => {
       <TrendingProp />
       <Testimonial />
       <FAQ />
-      <Hero />
-      <BestProp />
-      <TrendingProp />
-      <Testimonial />
-      <FAQ />
     </div>
   );
 };
