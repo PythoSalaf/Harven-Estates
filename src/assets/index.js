@@ -5,7 +5,6 @@ import Propertyhero from "./allproperty.svg";
 import Pana from "./pana.svg";
 import propertyOne from "./PropertyOne.svg";
 import A1 from "./A1.svg";
-import grid3 from "./Grid3.svg";
 import buy from "./buy.svg";
 import sell from "./sell.svg";
 import Shortlet from "./Shortlet.svg";
@@ -44,7 +43,6 @@ export {
   A1,
   buy,
   sell,
-  grid3,
   Shortlet,
   agent,
   person1,

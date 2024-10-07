@@ -23,7 +23,7 @@ const Hero = () => {
         which eases the stress of finding <br /> properties online</p>
     </div>
 
-   {/* <InputField/> */}
+    <InputField/> 
 </div>
 </div> 
 
