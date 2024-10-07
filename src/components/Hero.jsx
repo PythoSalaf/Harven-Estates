@@ -1,5 +1,5 @@
-import { MdSearch } from "react-icons/md";
 import { Cuate } from "../assets";
+import { InputField } from "../components";
 
 const Hero = () => {
   return (
@@ -25,15 +25,14 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="bg-white md:m-auto pt-5 mt-24  rounded mx-10 md:mx-60">
-            {/* search */}
-            <div className="flex md:p-3 gap-3">
-              <MdSearch size={36} className="text-gray " />
-              <p className="text-16 md:text-24 text-grey">Search...</p>
-            </div>
-
+          <div className="bg-white md:m-auto pt-5 mt-10  rounded mx-10 md:mx-60">
             {/*dropdown */}
-            <div className="md:flex grid gap-4">
+            <div className="md:flex grid gap-4 p-4">
+              {/* search */}
+              <div className="flex md:border border-b rounded md:p-2">
+                <MdSearch size={25} className="text-gray " />
+                <p className=" text-grey">Search...</p>
+              </div>
               {/* location */}
               <div className="bg-white p-3">
                 <select
@@ -53,7 +52,6 @@ const Hero = () => {
                 </select>
               </div>
 
-              {/* property Type */}
               <div className="bg-white p-3">
                 <select name="" id="location" className="border rounded p-2">
                   <option value="" type="checkbox">
