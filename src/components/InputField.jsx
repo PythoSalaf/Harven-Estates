@@ -37,13 +37,13 @@ const InputField = () => {
        <div className="bg-white p-3">
        <select name="" id="location" className="border rounded p-2">
                <option value="">Price Range</option>
-                <input type="range" name="" id="" />
+                <input type="range" name=""  />
                 </select>
        </div>
 
-       <div className="p-3">
+       {/* <div className="p-3">
            <button className="bg-blue rounded text-white text-24 px-3">Search</button>
-       </div>
+       </div> */}
     </div>
      </div>
   )
