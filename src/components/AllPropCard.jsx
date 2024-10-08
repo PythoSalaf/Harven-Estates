@@ -1,4 +1,4 @@
-import { Home1, Home2 } from "../assets";
+
 const propertyCategories = [
     {
       title: "600 residential apartments",
