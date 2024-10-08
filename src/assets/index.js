@@ -32,10 +32,13 @@ import Villa4 from "./villa4.jpg";
 import Villa5 from "./villa5.jpg";
 import Villa6 from "./villa6.jpg";
 import Villa7 from "./villa7.jpg";
-import Home1 from "./Home1.svg";
-import Home2 from "./Home2.svg"
+import Category1 from "./cate1.svg";
+import Category2 from "./cate2.svg";
+import Category3 from "./cate3.svg";
+import Category4 from "./cate4.svg";
+import Category5 from "./cate5.svg";
+import Category6 from "./cate6.svg";
 export {
-  Home2,
   Logo,
   Footerlogo,
   Cuate,
@@ -70,5 +73,10 @@ export {
   Villa5,
   Villa6,
   Villa7,
-  Home1,
+  Category1,
+  Category2,
+  Category3,
+  Category4,
+  Category5,
+  Category6,
 };
