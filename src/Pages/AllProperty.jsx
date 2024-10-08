@@ -1,6 +1,11 @@
-import { BiSearch } from "react-icons/bi";
+// import { BiSearch } from "react-icons/bi";
 import { Noresult, Portraite, Propertyhero } from "../assets";
-import { Button, PropertyCard, PropertyCategories } from "../components";
+import {
+  Button,
+  InputField,
+  PropertyCard,
+  PropertyCategories,
+} from "../components";
 import { useState } from "react";
 import { properties } from "../components/DummyData";
 
@@ -32,7 +37,7 @@ const AllProperty = () => {
           />
         </div>
 
-        <div className="absolute layout inset-0 z-20 flex flex-col h-[60vh] items-center rounded-xl justify-center ">
+        <div className="absolute layout inset-0 z-20 flex flex-col h-[75vh]  md:h-[68vh] lg:h-[60vh] items-center rounded-xl justify-center ">
           <div className="w-full">
             <h1 className="text-lg font-semibold text-primary md:text-xl">
               Explore haven
@@ -40,29 +45,9 @@ const AllProperty = () => {
             <p className="mt-12 text-2xl md:text-3xl text-grayPrimary">
               Browse to find properties available on Havens
             </p>
-            <div className="py-3 mt-8 border rounded-md border-graySecondary gap-x-4">
-              <div className="w-[96%] mx-auto flex items-center justify-between">
-                <div className="relative w-[70%]">
-                  <div className="absolute inset-y-0 left-0 flex items-center pl-3">
-                    <BiSearch className="w-5 h-5 text-gray-400" />
-                  </div>
-                  <input
-                    type="text"
-                    className="w-full py-2 pl-10 pr-4 text-gray-700 bg-white border rounded-lg border-graySecondary focus:outline-none focus:ring-2 focus:ring-transparent focus:border-transparent"
-                    placeholder="Search..."
-                  />
-                </div>
-                <div className="w-[28%] flex items-center gap-x-5 ">
-                  <Button
-                    btnText="Clear"
-                    btnStyle="border border-graySecondary w-full py-2 px-4 rounded-3xl text-primary"
-                  />
-                  <Button
-                    btnText="Search"
-                    btnStyle=" bg-primary py-2 w-full px-4 rounded-3xl text-white"
-                  />
-                </div>
-              </div>
+
+            <div className="mt-10 ">
+              <InputField />
             </div>
           </div>
         </div>
@@ -118,11 +103,21 @@ const AllProperty = () => {
         </div>
       </div>
       <div className="flex flex-col items-start justify-between w-full my-7 md:flex-row">
-        <div className="flex items-center justify-center w-full h-[400px] bg-primary">
+        <div className="flex items-center justify-center w-full h-[250px] md:h-[400px] bg-primary">
           <img src={Portraite} alt="portraite" className="h-full" />
         </div>
-        <div className="w-full bg-[#174579] h-[400px] flex items-center text-white justify-center">
-          <h3 className="">Didn’t find what you’re looking for?</h3>
+        <div className="w-full bg-[#174579] h-[250px] md:h-[400px] md:pl-9 flex flex-col items-center md:items-start text-white justify-center">
+          <h3 className="text-xl font-semibold md:text-2xl lg:text-3xl">
+            Didn’t find what you’re looking for?
+          </h3>
+          <p className="mt-3 mb-10 text-sm text-center md:text-base md:text-left">
+            Let us know your preference and our business team will reach out to
+            you with what matches your request.
+          </p>
+          <Button
+            btnText="Get in touch"
+            btnStyle="uppercase text-grayPrimary bg-white text-sm md:text-base px-6 py-2 rounded-3xl"
+          />
         </div>
       </div>
     </>

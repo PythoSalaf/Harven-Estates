@@ -40,9 +40,10 @@ const Navbar = () => {
           )}
         </div>
       </div>
+      {/* Mobile view */}
       {isToggle && (
-        <div className="absolute top-[3.2rem] w-full bg-primary h-52">
-          <div className="flex flex-col pt-3 text-white layout gap-y-1">
+        <div className="absolute top-[3.2rem] shadow-xl w-full bg-white h-52">
+          <div className="flex flex-col pt-3 text-black layout gap-y-1">
             <Link onClick={() => setIsToggle(!isToggle)} className="text-lg ">
               All Properties
             </Link>
