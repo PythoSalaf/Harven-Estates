@@ -10,6 +10,8 @@ import sell from "./sell.svg";
 import Shortlet from "./Shortlet.svg";
 import agent from "./Agent.svg";
 import person1 from "./person1.svg";
+import person2 from "./person2.svg";
+import person3 from "./person3.svg";
 import faq from "./faq.svg";
 import House1 from "./house1.jpg";
 import House2 from "./house2.jpg";
@@ -53,6 +55,8 @@ export {
   Shortlet,
   agent,
   person1,
+  person2,
+  person3,
   faq,
   House1,
   House2,
