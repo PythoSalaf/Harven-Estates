@@ -10,6 +10,8 @@ import sell from "./sell.svg";
 import Shortlet from "./Shortlet.svg";
 import agent from "./Agent.svg";
 import person1 from "./person1.svg";
+import person2 from "./person2.svg";
+import person3 from "./person3.svg";
 import faq from "./faq.svg";
 import House1 from "./house1.jpg";
 import House2 from "./house2.jpg";
@@ -32,9 +34,13 @@ import Villa4 from "./villa4.jpg";
 import Villa5 from "./villa5.jpg";
 import Villa6 from "./villa6.jpg";
 import Villa7 from "./villa7.jpg";
-
+import Category1 from "./cate1.svg";
+import Category2 from "./cate2.svg";
+import Category3 from "./cate3.svg";
+import Category4 from "./cate4.svg";
+import Category5 from "./cate5.svg";
+import Category6 from "./cate6.svg";
 export {
- 
   Logo,
   Footerlogo,
   Cuate,
@@ -47,6 +53,8 @@ export {
   Shortlet,
   agent,
   person1,
+  person2,
+  person3,
   faq,
   House1,
   House2,
@@ -69,5 +77,10 @@ export {
   Villa5,
   Villa6,
   Villa7,
- 
+  Category1,
+  Category2,
+  Category3,
+  Category4,
+  Category5,
+  Category6,
 };
