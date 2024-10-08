@@ -53,7 +53,7 @@ const propertyCategories = [
 
 const PropertyCategories = () => {
   return (
-    <div className="p-10 layout">
+    <div className=" layout">
       <h2 className="mb-4 text-2xl font-bold">All properties categories</h2>
       <p className="mb-6">
         Discover the best properties people are buying/renting on Haven.

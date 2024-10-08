@@ -1,6 +1,6 @@
 import { BiSearch } from "react-icons/bi";
-import { Propertyhero } from "../assets";
-import { Button, PropertyCard } from "../components";
+import { Noresult, Portraite, Propertyhero } from "../assets";
+import { Button, PropertyCard, PropertyCategories } from "../components";
 import { useState } from "react";
 import { properties } from "../components/DummyData";
 
@@ -67,10 +67,14 @@ const AllProperty = () => {
           </div>
         </div>
       </div>
-
+      <div className="py-10">
+        <PropertyCategories />
+      </div>
       <div className="py-10 layout">
         <div className="flex items-center justify-between">
-          <h3 className="text-lg text-grayPrimary md:text-xl">155 Results</h3>
+          <h3 className="text-lg text-grayPrimary md:text-xl">
+            {filteredProperties.length} Results
+          </h3>
           <div className="px-3 py-1 border border-graySecondary rounded-xl">
             <p>Most relevant</p>
           </div>
@@ -97,12 +101,28 @@ const AllProperty = () => {
               ))}
             </div>
           ) : (
-            <div className="w-full text-center col-span-full">
-              <p className="text-lg font-semibold text-red-600 md:text-xl lg:text-2xl">
-                No properties available in this category.
+            <div className="flex flex-col items-center justify-center w-full">
+              <img
+                src={Noresult}
+                alt="results"
+                className="size-[140px] md:size-[200px]"
+              />
+              <h3 className="mb-2 text-lg font-semibold md:text-xl ">
+                Sorry, no properties matched
+              </h3>
+              <p className="text-sm md:text-base">
+                There are no results for this search. Please try another phrase
               </p>
             </div>
           )}
+        </div>
+      </div>
+      <div className="flex flex-col items-start justify-between w-full my-7 md:flex-row">
+        <div className="flex items-center justify-center w-full h-[400px] bg-primary">
+          <img src={Portraite} alt="portraite" className="h-full" />
+        </div>
+        <div className="w-full bg-[#174579] h-[400px] flex items-center text-white justify-center">
+          <h3 className="">Didn’t find what you’re looking for?</h3>
         </div>
       </div>
     </>
