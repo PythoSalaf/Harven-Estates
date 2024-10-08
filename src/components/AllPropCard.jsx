@@ -53,9 +53,9 @@ const propertyCategories = [
 
 const PropertyCategories = () => {
   return (
-    <div className="p-10 layout">
-      <h2 className="mb-4 text-2xl font-bold">All properties categories</h2>
-      <p className="mb-6">
+    <div className="layout">
+      <h2 className="text-24 font-bold md:text-40">All properties categories</h2>
+      <p className="mb-6 text-gray text-16 md:text-20">
         Discover the best properties people are buying/renting on Haven.
       </p>
 
@@ -65,7 +65,7 @@ const PropertyCategories = () => {
             <img
               src={category.icon}
               alt=""
-              className="mb-4  size-[40px] md:size-[50px] md:mb-10"
+              className="mb-4 md:mb-8 size-[40px] md:size-[50px]"
             />
             <h3 className="mb-2 font-bold md:text-lg">{category.title}</h3>
             <p>{category.description}</p>
