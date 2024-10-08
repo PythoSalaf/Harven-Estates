@@ -5,7 +5,6 @@ import Propertyhero from "./allproperty.svg";
 import Pana from "./pana.svg";
 import propertyOne from "./PropertyOne.svg";
 import A1 from "./A1.svg";
-import grid3 from "./Grid3.svg";
 import buy from "./buy.svg";
 import sell from "./sell.svg";
 import Shortlet from "./Shortlet.svg";
@@ -33,8 +32,10 @@ import Villa4 from "./villa4.jpg";
 import Villa5 from "./villa5.jpg";
 import Villa6 from "./villa6.jpg";
 import Villa7 from "./villa7.jpg";
-
+import Home1 from "./Home1.svg";
+import Home2 from "./Home2.svg"
 export {
+  Home2,
   Logo,
   Footerlogo,
   Cuate,
@@ -44,7 +45,6 @@ export {
   A1,
   buy,
   sell,
-  grid3,
   Shortlet,
   agent,
   person1,
@@ -70,4 +70,5 @@ export {
   Villa5,
   Villa6,
   Villa7,
+  Home1,
 };

@@ -1,4 +1,4 @@
-import { BestProp, TrendingProp, Testimonial, FAQ, Hero } from "../components";
+import { BestProp, TrendingProp, Testimonial, FAQ, Hero, PropertyCategories, HomeProperties } from "../components";
 
 const Home = () => {
   return (
@@ -6,6 +6,8 @@ const Home = () => {
       <Hero/>
       <BestProp />
       <TrendingProp />
+      <PropertyCategories/>
+      <HomeProperties/>
       <Testimonial />
       <FAQ />
     </div>
