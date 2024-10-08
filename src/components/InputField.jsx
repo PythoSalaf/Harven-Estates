@@ -1,52 +1,81 @@
-
+import { useState } from "react";
 import { MdSearch } from "react-icons/md";
+
 const InputField = () => {
+  // State to handle price range
+  const [priceRange, setPriceRange] = useState([0, 100000000]); 
+  const [currentPrice, setCurrentPrice] = useState(priceRange[1]); 
+
+ 
+  const handlePriceChange = (event) => {
+    setCurrentPrice(event.target.value);
+  };
+
   return (
-    <div className="bg-white md:m-auto pt-5 mt-10  rounded mx-10 md:mx-60">
-    <div className="md:flex grid gap-4 p-4">
-   
-    <div className="flex border rounded-2xl">
-    <MdSearch size={25} className="text-gray mt-5 ml-2" />
-    <input type="text" className=" text-grey outline-none " placeholder="Search" />
+    <div className="bg-white md:m-auto pt-5 mt-10 rounded mx-10 p-8 ">
+      <div className="md:flex grid gap-4 p-4">
+        {/* Search Box */}
+        <div className="flex bg-primary rounded-2xl items-center w-full md:w-1/4 h-12">
+          <MdSearch size={25} className="text-white ml-2" />
+          <input
+            type="text"
+            className="text-white bg-primary outline-none w-full px-2"
+            placeholder="Search"
+          />
+        </div>
+
+        {/* Location Dropdown */}
+        <div className="flex w-full md:w-1/4 h-12">
+          <select
+            name="location"
+            id="location"
+            className="bg-primary rounded-2xl p-2 w-full h-full text-white "
+          >
+            <option value="" className="">Location</option>
+            <option value="Ibadan">Ibadan, Oyo state</option>
+            <option value="Ikeja">Ikeja, Lagos state</option>
+            <option value="Ikorodu">Ikorodu, Lagos state</option>
+            <option value="Abeokuta">Abeokuta, Ogun state</option>
+            <option value="Ijebu Ode">Ijebu Ode, Ogun state</option>
+            <option value="Sango">Sango, Ogun state</option>
+          </select>
+        </div>
+
+        {/* Property Type Dropdown */}
+        <div className="flex w-full md:w-1/4 h-12 ">
+          <select
+            name="propertyType"
+            id="propertyType"
+            className="bg-primary text-white rounded-2xl p-2 w-full h-full"
+          >
+            <option value="">Property Type</option>
+            <option value="Appartments">Appartments</option>
+            <option value="Detached Bungalow">Detached Bungalow</option>
+            <option value="Office space">Office space</option>
+            <option value="Rentals">Rentals</option>
+            <option value="Shops">Shops</option>
+            <option value="Resorts">Resorts</option>
+          </select>
+        </div>
+
+        {/* Price Range Slider in Dropdown-Like Border */}
+        <div className="flex w-full md:w-1/4 h-12 relative">
+          <div className="bg-primary text-white rounded-2xl p-2 w-full h-full flex flex-col justify-center">
+            <label className="text-white mb-1">₦{Number(currentPrice).toLocaleString()}</label>
+            <input
+              type="range"
+              className="w-full"
+              min={priceRange[0]}
+              max={priceRange[1]}
+              value={currentPrice}
+              onChange={handlePriceChange}
+              step={50000} 
+            />
+          </div>
+        </div>
+      </div>
     </div>
-    
-       <div className="bg-white p-3">
-           <select name="" id="location" className="md:border border-b rounded md:p-2">
-                <option value="">Location</option>
-                <option value="" type='checkbox'>Ibadan, Oyo state</option>
-                <option value="">Ikeja, Lagos state</option>
-                <option value="">Ikorodu, Lagos state</option>
-                <option value="">Abeokuta, Ogun state</option>
-                <option value="">Ijebu Ode, Ogun state</option>
-                <option value="">Sango, Ogun state</option>
-                </select>
-                </div>
+  );
+};
 
-     
-       <div className="bg-white p-3">
-       <select name="" id="location" className="border rounded p-2">
-                <option value=""  type='checkbox'>Property Type</option>
-                <option value="" type='checkbox'>Appartments</option>
-                <option value="">Detached Bungalow</option>
-                <option value="">Office space</option>
-                <option value="">Rentals</option>
-                <option value="">Shops</option>
-                <option value="">Resorts</option>
-                </select>
-       </div>
-       <div className="bg-white p-3">
-       <select name="" id="location" className="border rounded p-2">
-               <option value="">Price Range</option>
-                <input type="range" name=""  />
-                </select>
-       </div>
-
-       {/* <div className="p-3">
-           <button className="bg-blue rounded text-white text-24 px-3">Search</button>
-       </div> */}
-    </div>
-     </div>
-  )
-}
-
-export default InputField
+export default InputField;

@@ -10,3 +10,5 @@ export { default as Testimonial } from "./Testimonial";
 export { default as FAQ } from "./FAQ";
 export { default as InputField } from "./InputField";
 export { default as PropertyCard } from "./PropertyCard";
+export { default as PropertyCategories} from "./AllPropCard";
+export { default as HomeProperties} from "./HomeProperties";
