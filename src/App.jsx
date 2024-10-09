@@ -1,5 +1,12 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { AllProperty, Error, Home, Layout } from "./Pages";
+import {
+  Agents,
+  AllProperty,
+  Error,
+  Home,
+  Layout,
+  PropertyDetails,
+} from "./Pages";
 
 function App() {
   const router = createBrowserRouter([
@@ -14,6 +21,14 @@ function App() {
         {
           path: "/all-properties",
           element: <AllProperty />,
+        },
+        {
+          path: "/agents",
+          element: <Agents />,
+        },
+        {
+          path: "/property-detail/:id",
+          element: <PropertyDetails />,
         },
       ],
     },
