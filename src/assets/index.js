@@ -40,6 +40,8 @@ import Category3 from "./cate3.svg";
 import Category4 from "./cate4.svg";
 import Category5 from "./cate5.svg";
 import Category6 from "./cate6.svg";
+import Noresult from "./noresults.svg";
+import Portraite from "./portraite.svg";
 export {
   Logo,
   Footerlogo,
@@ -83,4 +85,6 @@ export {
   Category4,
   Category5,
   Category6,
+  Noresult,
+  Portraite,
 };

@@ -54,7 +54,9 @@ const propertyCategories = [
 const PropertyCategories = () => {
   return (
     <div className="layout">
-      <h2 className="text-24 font-bold md:text-40">All properties categories</h2>
+      <h2 className="font-bold text-24 md:text-40">
+        All properties categories
+      </h2>
       <p className="mb-6 text-gray text-16 md:text-20">
         Discover the best properties people are buying/renting on Haven.
       </p>
