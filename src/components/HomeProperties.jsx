@@ -9,8 +9,8 @@ const HomeProperties = () => {
 
   return (
     <div className="pt-3 m md:pt-0 my-4 md:my-10 layout">
-      <div className='md:flex justify-between py-10'>
-      <div className=''>
+      <div className='lg:flex justify-between py-10'>
+      <div>
       <h2 className="text-24 font-bold md:text-40">
       Recommended properties
       </h2>
@@ -18,7 +18,7 @@ const HomeProperties = () => {
       </div>
      
       <div className="mt-5 md:md-0">
-       <Link to='' className="flex gap-3 text-black md:p-2 md:bg-[#F3F4F6] rounded-xl">
+       <Link to='' className="flex gap-3 text-black md:p-2 lg:bg-[#F3F4F6] rounded-xl">
        
        See All 
        <IoIosArrowRoundForward 
@@ -29,7 +29,7 @@ const HomeProperties = () => {
 
       </div>
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {featuredProperties.map((property) => (
           <PropertyCard key={property.id} {...property} />
         ))}
