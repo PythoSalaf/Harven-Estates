@@ -15,8 +15,8 @@ const Navbar = () => {
 
         <div className="items-center hidden md:flex gap-x-5">
           <NavLink to="/all-properties">All Properties</NavLink>
-          <NavLink>Agents</NavLink>
-          <NavLink>Blogs</NavLink>
+          <NavLink to="/agents">Agents</NavLink>
+          <NavLink to="/blog">Blogs</NavLink>
         </div>
         <div className="items-center hidden md:flex gap-x-5">
           <div className="flex items-center gap-x-5">
@@ -44,13 +44,25 @@ const Navbar = () => {
       {isToggle && (
         <div className="absolute top-[3.2rem] shadow-xl w-full bg-white h-52">
           <div className="flex flex-col pt-3 text-black layout gap-y-1">
-            <Link onClick={() => setIsToggle(!isToggle)} className="text-lg ">
+            <Link
+              to="/all-properties"
+              onClick={() => setIsToggle(!isToggle)}
+              className="text-lg "
+            >
               All Properties
             </Link>
-            <Link onClick={() => setIsToggle(!isToggle)} className="text-lg">
+            <Link
+              to="/agents"
+              onClick={() => setIsToggle(!isToggle)}
+              className="text-lg"
+            >
               Agents
             </Link>
-            <Link onClick={() => setIsToggle(!isToggle)} className="text-lg">
+            <Link
+              to="/blog"
+              onClick={() => setIsToggle(!isToggle)}
+              className="text-lg"
+            >
               Blog
             </Link>
           </div>
