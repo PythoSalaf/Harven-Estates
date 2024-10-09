@@ -42,8 +42,15 @@ import Category5 from "./cate5.svg";
 import Category6 from "./cate6.svg";
 import Noresult from "./noresults.svg";
 import Portraite from "./portraite.svg";
+import agentHome from "./agentHome.svg";
+import HomeIcon from "./HomeIcon.svg";
+import Cube from "./Cube.svg";
+
 export {
+  Cube,
+  HomeIcon,
   Logo,
+  agentHome,
   Footerlogo,
   Cuate,
   Propertyhero,

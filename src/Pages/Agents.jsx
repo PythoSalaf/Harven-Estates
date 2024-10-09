@@ -1,8 +1,11 @@
+import { AgentHero,SellingOnHaven, FAQ } from "../components";
 
 const Agents = () => {
   return (
     <div>
-      <h2>Agents</h2>
+      <AgentHero/>
+      <SellingOnHaven/>
+      <FAQ/>
     </div>
   );
 };
