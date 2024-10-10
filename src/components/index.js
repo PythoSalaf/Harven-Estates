@@ -13,3 +13,5 @@ export { default as InputField } from "./InputField";
 export { default as PropertyCard } from "./PropertyCard";
 export { default as PropertyCategories } from "./AllPropCard";
 export { default as HomeProperties } from "./HomeProperties";
+export { default as AgentHero } from "./AgentHero";
+export { default as SellingOnHaven } from "./SellingOnHaven";
