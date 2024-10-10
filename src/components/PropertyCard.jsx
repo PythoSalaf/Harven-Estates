@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
 import { CiLocationOn } from "react-icons/ci";
 
-const PropertyCard = ({ images, title, location, type, price }) => {
+const PropertyCard = ({ images, title, location, type, price, id }) => {
   return (
-    <Link to="" className="w-[90%] md:w-full mx-auto rounded-t-3xl">
+    <Link
+      to={`/property-detail/${id}`}
+      className="w-[90%] md:w-full mx-auto rounded-t-3xl"
+    >
       <div className="w-full">
         <img
           src={images[0]}
