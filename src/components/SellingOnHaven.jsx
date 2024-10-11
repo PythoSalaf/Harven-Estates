@@ -6,10 +6,10 @@ const SellingOnHaven = () => {
     
       
       <div className="w-full md:w-1/2 flex flex-col items-center md:items-start p-8 md:p-16">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray mb-4">
+        <h1 className="text-3xl md:text-4xl font-bold mb-4">
           Start selling on Haven
         </h1>
-        <p className="mb-6">
+        <p className="mb-6 leading-loose">
           Haven provides you with an agent’s dashboard which contains the set of tools you’ll
           need to reach the mass market and sell your property.
         </p>
