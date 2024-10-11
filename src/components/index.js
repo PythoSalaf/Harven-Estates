@@ -16,3 +16,4 @@ export { default as HomeProperties } from "./HomeProperties";
 export { default as AgentHero } from "./AgentHero";
 export { default as SellingOnHaven } from "./SellingOnHaven";
 export { default as PropertySlider } from "./PropertySlider";
+export { default as Stepper } from "./Stepper";
