@@ -51,16 +51,13 @@ const Stepper = () => {
     },
     {
       id: 3,
-      title: 'Manage your workspace',
+      title: 'Invite New Team members',
       description: 'Add new team members to your agency workspace. Happy collaboration.',
       content: (
         <div>
-          <label className="block mb-2 text-sm font-medium">Team Size:</label>
-          <select className="border border-gray-300 p-2 rounded w-full">
-            <option value="small">1-10</option>
-            <option value="medium">11-50</option>
-            <option value="large">50+</option>
-          </select>
+          <label className="block mb-2 text-sm font-medium">Email</label>
+          <input type="email" placeholder='Plese input your Email' className='border border-[#C0D8F3] p-2 rounded w-full' />
+          <button className='bg-primary text-white rounded mt-6 p-2 md:p-3'>Submit</button>
         </div>
       ),
     },
