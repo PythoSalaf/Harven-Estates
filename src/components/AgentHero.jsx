@@ -2,13 +2,13 @@ import { agentHome, HomeIcon } from "../assets";
 import { IoIosArrowForward } from "react-icons/io";
 const AgentHero = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center layout md:px-16 pt-12  md:py-12">
+    <div className="flex flex-col md:flex-row justify-between items-center layout md:py-20 pt-12">
       
-      <div className="flex-1 md:text-left mb-8 md:mb-0">
+      <div className="flex-1 md:text-left mb-8 md:mb-0 md:px-10">
         <p className="text-primary font-medium uppercase tracking-widest text-sm md:text-lg">
           For Agents
         </p>
-        <h1 className="text-3xl md:text-5xl font-bold leading-relaxed mb-4">
+        <h1 className="text-3xl md:text-4xl lg-5xk font-bold leading-relaxed mb-4">
           One platform to manage all your Agency business needs
         </h1>
         <p className="text-gray mb-6 text-sm md:text-lg">
@@ -25,7 +25,7 @@ const AgentHero = () => {
           <img
             src={agentHome}
             alt="Agent holding a house"
-            className="w-[500px] object-cover"
+            className="lg:w-[500px] w-full md:w-[300px] object-cover"
           />
         </div>
 
