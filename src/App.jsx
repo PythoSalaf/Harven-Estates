@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import {
   Agents,
+  AllAgents,
   AllProperty,
   Error,
   Home,
@@ -26,8 +27,12 @@ function App() {
           element: <AllProperty />,
         },
         {
-          path: "/agents",
+          path: "/become-an-agent",
           element: <Agents />,
+        },
+        {
+          path: "/agents",
+          element: <AllAgents />,
         },
         {
           path: "/property-detail/:id",
