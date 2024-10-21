@@ -31,6 +31,8 @@ export const properties = [
     category: "smart house",
     type: "Rent",
     price: "1000000",
+    description:
+      "Right near the Federal Housing Bridge (in Kubwa) is a medium-sized estate, which houses this 4 bed terrace duplex. This estate officially sits in the Karsana district of the FCT. Due to its proximity to the Kubwa/Gwarinpa Expressway, getting to the Abuja Central Area is both fast and easy. This terrace comprises of 4 en suite rooms, as well as a generously sized kitchen and store. The living rooms are also large, for maximum comfort. This is a great starter home for a family. It is also a great home purely for investment purposes, with rental rates steadily rising.",
   },
   {
     id: 2,
@@ -40,6 +42,8 @@ export const properties = [
     category: "villa",
     type: "Sale",
     price: "720000000",
+    description:
+      "Right near the Federal Housing Bridge (in Kubwa) is a medium-sized estate, which houses this 4 bed terrace duplex. This estate officially sits in the Karsana district of the FCT. Due to its proximity to the Kubwa/Gwarinpa Expressway, getting to the Abuja Central Area is both fast and easy. This terrace comprises of 4 en suite rooms, as well as a generously sized kitchen and store. The living rooms are also large, for maximum comfort. This is a great starter home for a family. It is also a great home purely for investment purposes, with rental rates steadily rising.",
   },
   {
     id: 3,
