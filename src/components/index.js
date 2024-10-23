@@ -18,3 +18,7 @@ export { default as SellingOnHaven } from "./SellingOnHaven";
 export { default as PropertySlider } from "./PropertySlider";
 export { default as TabContent } from "./TabContent";
 export { default as Stepper } from "./Stepper";
+export { default as MobileStepper} from "./MobileStepper";
+export {default as SignupComp} from "./SignupComp";
+export {default as Signin} from "./Signin";
+export {default as ResetComp} from './ResetComp'

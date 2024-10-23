@@ -2,7 +2,7 @@ import { useState } from "react";
 import { MdSearch } from "react-icons/md";
 
 const InputField = () => {
-  // State to handle price range
+ 
   const [priceRange, setPriceRange] = useState([0, 100000000]);
   const [currentPrice, setCurrentPrice] = useState(priceRange[1]);
 
@@ -13,7 +13,7 @@ const InputField = () => {
   return (
     <div className="w-full md:w-[90%] py-6 mx-auto mt-10 bg-white rounded ">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4  w-[94%] mx-auto">
-        {/* Search Box */}
+        
         <div className="flex items-center w-full h-12 bg-primary rounded-2xl ">
           <MdSearch size={25} className="ml-2 text-white" />
           <input
@@ -23,7 +23,7 @@ const InputField = () => {
           />
         </div>
 
-        {/* Location Dropdown */}
+    
         <div className="flex w-full h-12 ">
           <select
             name="location"
@@ -42,7 +42,7 @@ const InputField = () => {
           </select>
         </div>
 
-        {/* Property Type Dropdown */}
+        
         <div className="flex w-full h-12 ">
           <select
             name="propertyType"
@@ -59,7 +59,7 @@ const InputField = () => {
           </select>
         </div>
 
-        {/* Price Range Slider in Dropdown-Like Border */}
+        
         <div className="relative flex w-full h-12 ">
           <div className="flex flex-col justify-center w-full h-full p-2 text-white bg-primary rounded-2xl">
             <label className="mb-1 text-white">
@@ -67,7 +67,7 @@ const InputField = () => {
             </label>
             <input
               type="range"
-              className="w-full"
+              className="w-full accent-white"
               min={priceRange[0]}
               max={priceRange[1]}
               value={currentPrice}

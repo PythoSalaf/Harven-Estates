@@ -10,7 +10,10 @@ import {
   Home,
   Layout,
   PropertyDetails,
+  ResetPassword,
+  SignUp
 } from "./Pages";
+import SignIn from "./Pages/SignIn";
 
 function App() {
   const router = createBrowserRouter([
@@ -38,6 +41,18 @@ function App() {
           path: "/property-detail/:id",
           element: <PropertyDetails />,
         },
+        {
+          path: "sign-up",
+          element: <SignUp />,
+        },
+        {
+          path: "sign-in",
+          element: <SignIn />,
+        },
+        {
+          path: "/reset-password",
+          element: <ResetPassword />,
+        }
       ],
     },
     {

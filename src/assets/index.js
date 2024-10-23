@@ -45,8 +45,9 @@ import Portraite from "./portraite.svg";
 import agentHome from "./agentHome.svg";
 import HomeIcon from "./HomeIcon.svg";
 import Cube from "./Cube.svg";
-
+import SliderImg from "./SliderImg.svg";
 export {
+  SliderImg,
   Cube,
   HomeIcon,
   Logo,
