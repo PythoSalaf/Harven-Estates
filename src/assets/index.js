@@ -44,6 +44,10 @@ import Noresult from "./noresults.svg";
 import Portraite from "./portraite.svg";
 import agentHome from "./agentHome.svg";
 import HomeIcon from "./HomeIcon.svg";
+import Agent1 from "./agent1.png";
+import Agent2 from "./agent2.jpg";
+import Agent3 from "./agent3.jpg";
+import Agent4 from "./agent4.jpg";
 import Cube from "./Cube.svg";
 import SliderImg from "./SliderImg.svg";
 export {
@@ -95,4 +99,8 @@ export {
   Category6,
   Noresult,
   Portraite,
+  Agent1,
+  Agent2,
+  Agent3,
+  Agent4,
 };
