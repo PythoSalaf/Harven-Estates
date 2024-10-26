@@ -4,4 +4,7 @@ export { default as AllProperty } from "./AllProperty";
 export { default as Agents } from "./Agents";
 export { default as AllAgents } from "./AllAgents";
 export { default as PropertyDetails } from "./PropertyDetails";
+export { default as SignUp} from "./SignUp";
+export {default as signIn} from "./SignIn";
+export {default as ResetPassword} from "./ResetPassword";
 export { default as Error } from "./Error";

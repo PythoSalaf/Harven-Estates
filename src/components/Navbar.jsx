@@ -20,8 +20,10 @@ const Navbar = () => {
         </div>
         <div className="items-center hidden md:flex gap-x-5">
           <div className="flex items-center gap-x-5">
-            <Link>Sign in</Link>
-            <Link>Sign up</Link>
+
+            <NavLink to='/sign-in'>Sign In</NavLink>
+            <NavLink to='/sign-up'>Sign up</NavLink>
+
           </div>
           <Button
             btnText="Find Properties"

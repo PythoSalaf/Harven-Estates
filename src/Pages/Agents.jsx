@@ -1,10 +1,11 @@
-import { AgentHero,SellingOnHaven, FAQ,Stepper } from "../components";
+import { AgentHero,SellingOnHaven, FAQ,Stepper, MobileStepper } from "../components";
 
 const Agents = () => {
   return (
     <div>
       <AgentHero/>
       <Stepper/>
+      <MobileStepper/>
       <SellingOnHaven/>
       <FAQ/>
     </div>
