@@ -14,6 +14,7 @@ import {
   SignUp
 } from "./Pages";
 import SignIn from "./Pages/SignIn";
+import { AgentLogin } from "./components";
 
 function App() {
   const router = createBrowserRouter([
@@ -48,6 +49,10 @@ function App() {
         {
           path: "sign-in",
           element: <SignIn />,
+        },
+        {
+          path: "Agent-signIn",
+          element: <AgentLogin/>,
         },
         {
           path: "/reset-password",
