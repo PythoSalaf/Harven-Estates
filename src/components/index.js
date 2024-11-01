@@ -22,3 +22,4 @@ export { default as MobileStepper} from "./MobileStepper";
 export {default as SignupComp} from "./SignupComp";
 export {default as Signin} from "./Signin";
 export {default as ResetComp} from './ResetComp'
+export {default as AgentLogin} from "./AgentLogin";
