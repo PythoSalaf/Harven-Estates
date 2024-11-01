@@ -21,11 +21,11 @@ import House5 from "./house5.jpg";
 import House6 from "./house6.jpg";
 import House7 from "./house7.jpg";
 import House8 from "./house8.jpg";
-import Office2 from "./office2.jpg";
-import Office3 from "./office3.jpg";
-import Office4 from "./office4.jpg";
-import Office5 from "./office5.jpg";
-import Office6 from "./office6.jpg";
+// import Office2 from "./office2.jpg";
+// import Office3 from "./office3.jpg";
+// import Office4 from "./office4.jpg";
+// import Office5 from "./office5.jpg";
+// import Office6 from "./office6.jpg";
 import Villa1 from "./villa1.jpg";
 import Villa2 from "./villa2.jpg";
 import Villa3 from "./villa3.jpg";
@@ -77,11 +77,11 @@ export {
   House6,
   House7,
   House8,
-  Office2,
-  Office3,
-  Office4,
-  Office5,
-  Office6,
+  // Office2,
+  // Office3,
+  // Office4,
+  // Office5,
+  // Office6,
   Villa1,
   Villa2,
   Villa3,

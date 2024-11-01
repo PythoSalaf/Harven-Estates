@@ -1,4 +1,4 @@
-import { propertyOne, Shortlet, A1, Office2 } from "../assets";
+import { propertyOne, Shortlet, A1,Villa2 } from "../assets";
 
 const Trending = () => {
   return (
@@ -34,7 +34,7 @@ const Trending = () => {
         </div>
         <div className="relative">
           <img
-            src={Office2}
+            src={Villa2}
             alt="Apartments Collections"
             className=" object-cover rounded-lg md:w-90 h-[100%] lg:h-90"
           />
