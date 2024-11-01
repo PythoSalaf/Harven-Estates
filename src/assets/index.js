@@ -21,7 +21,6 @@ import House5 from "./house5.jpg";
 import House6 from "./house6.jpg";
 import House7 from "./house7.jpg";
 import House8 from "./house8.jpg";
-// import Office1 from "./office1.jpg";
 import Office2 from "./office2.jpg";
 import Office3 from "./office3.jpg";
 import Office4 from "./office4.jpg";
@@ -78,7 +77,6 @@ export {
   House6,
   House7,
   House8,
-  // Office1,
   Office2,
   Office3,
   Office4,
