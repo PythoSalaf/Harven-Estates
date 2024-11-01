@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Agent1, Agent2, Agent4 } from "../assets";
+import { Agent2 } from "../assets";
 import {
   FaFacebookF,
   FaInstagram,
