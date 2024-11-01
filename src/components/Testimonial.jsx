@@ -25,23 +25,22 @@ const testimonials = [
 
 const Testimonial = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [slideDirection, setSlideDirection] = useState(''); // Tracks slide direction for animation
+  const [fadeAnimation, setFadeAnimation] = useState(false);
 
-  // Handles animation direction
+  // Handles animation trigger
   useEffect(() => {
+    setFadeAnimation(true);
     const timeout = setTimeout(() => {
-      setSlideDirection('');
-    }, 500); // Reset animation after 500ms (matches transition duration)
+      setFadeAnimation(false);
+    }, 300); // Reset animation after 300ms
     return () => clearTimeout(timeout);
   }, [activeIndex]);
 
   const handlePrev = () => {
-    setSlideDirection('left');
     setActiveIndex(activeIndex === 0 ? testimonials.length - 1 : activeIndex - 1);
   };
 
   const handleNext = () => {
-    setSlideDirection('right');
     setActiveIndex(activeIndex === testimonials.length - 1 ? 0 : activeIndex + 1);
   };
 
@@ -51,15 +50,15 @@ const Testimonial = () => {
       <p className="text-gray-500 md:my-4 text-gray text-16 md:text-20">Hear what our clients say about us</p>
 
       <div className="md:flex gap-10 flex-row items-start justify-between w-full max-w-4xl p-6">
-        <div className={`flex items-start justify-center transition-all duration-500 ease-in-out transform ${slideDirection === 'left' ? '-translate-x-full opacity-0' : slideDirection === 'right' ? 'translate-x-full opacity-0' : 'translate-x-0 opacity-100'}`}>
+        <div className="flex items-start justify-center">
           <img
             src={testimonials[activeIndex].image}
             alt={testimonials[activeIndex].name}
-            className="object-cover rounded-2xl"
+            className={`object-cover rounded-2xl transition-opacity duration-300 ease-in-out ${fadeAnimation ? 'opacity-0' : 'opacity-100'}`}
           />
         </div>
 
-        <div className={`md:w-2/3 flex flex-col mt-6 md:mt-0 transition-all duration-500 ease-in-out transform ${slideDirection === 'left' ? '-translate-x-full opacity-0' : slideDirection === 'right' ? 'translate-x-full opacity-0' : 'translate-x-0 opacity-100'}`}>
+        <div className={`md:w-2/3 flex flex-col mt-6 md:mt-0 transition-transform duration-300 ease-in-out transform ${fadeAnimation ? 'translate-x-10 opacity-0' : 'translate-x-0 opacity-100'}`}>
           <p className="text-lg italic mb-4">{testimonials[activeIndex].text}</p>
           <h3 className="font-bold text-lg">{testimonials[activeIndex].name}</h3>
 

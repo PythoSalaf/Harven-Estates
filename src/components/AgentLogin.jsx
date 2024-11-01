@@ -38,9 +38,8 @@ export default function Login() {
 
   return (
     <div className='layout'>
-      
       <div className="min-h-screen flex items-center justify-center">
-      
+     
         <div className="p-8 rounded-lg max-w-md w-full">
           <h2 className="text-2xl font-semibold mb-6 text-center">
             Welcome back to Haven!
@@ -49,11 +48,11 @@ export default function Login() {
             Login to your Agency’s workspace
           </p>
 
-          <div>
-              <Link to="/Agent-signIn" className="text-blue underline">
-                Sign in as Agent
+          <p>
+              <Link to="/sign-in" className="text-blue underline">
+                Sign in as Client
               </Link>
-    </div>
+            </p>
 
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
